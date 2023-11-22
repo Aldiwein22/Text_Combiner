@@ -3,7 +3,7 @@ from striprtf.striprtf import rtf_to_text
 from PyPDF2 import PdfReader
 
 # Define the directory containing the text files and PDF files
-directory = "files"
+directory = os.getcwd()
 
 # Define the output file name
 output_file = "merged.txt"

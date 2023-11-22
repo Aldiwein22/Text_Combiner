@@ -1,6 +1,6 @@
 import os
 from striprtf.striprtf import rtf_to_text
-from PyPDF2 import PdfReader, PdfFileReader
+from PyPDF2 import PdfReader
 
 def merge_files(directory, output_file):
     # Open the output file in write mode
@@ -53,7 +53,7 @@ def merge_files(directory, output_file):
                         print(f"Adding new line after {filename}")
                 elif filename.endswith(".pdf"):
                     # Open the PDF file in read mode
-                    pdf = PdfFileReader(full_path)
+                    pdf = PdfReader(full_path)
                     # Write the file name as a chapter title
                     chapter_title = filename.replace(".pdf", "")
                     outfile.write(f"Chapter: {chapter_title}\n\n")

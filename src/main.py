@@ -75,7 +75,7 @@ def merge_files(directory, output_file):
 
 def main():
     # Define the directory containing the text files and PDF files
-    directory = os.path.join(os.path.dirname(os.path.abspath(__file__)), "files")
+    directory = os.path.join(os.path.dirname(os.path.abspath(__file__)), "text_files")
 
     # Define the output file name
     output_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "merged.txt")

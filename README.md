@@ -1,27 +1,65 @@
-# Text_Combiner
+# TEXT_COMBINER
 
-This Python script combines multiple text-based files into a single file.
+This is a Python project that includes a main script and a project search script. It also includes a set of unit tests.
 
-## Requirements
-- Python 3.x
-- striprtf
-- PyPDF2
+## Getting Started
 
-## Installation
-1. Clone the repository: `git clone https://github.com/username/Text_Combiner.git`
-2. Navigate to the directory: `cd Text_Combiner`
-3. Install the dependencies: `pip install -r requirements.txt`
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-## Usage
-1. Place the files to be combined in the `files` directory.
-2. Run the script: `python text_combiner.py`
-3. The combined file will be created as `merged.txt` in the current directory.
+### Prerequisites
 
-## Notes
-- The script supports combining text files (.txt), RTF files (.rtf), and PDF files (.pdf).
-- The content of the combined file will be displayed in the order of the files in the `files` directory.
-- Each file or each page in a PDF file will be treated as a separate chapter.
-- The chapter headings correspond to the file names without file extensions.
+You need Python 3.x and pip installed on your machine. You can verify your Python and pip installation by running the following commands in your terminal:
 
-## License
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+```bash
+python --version
+pip --version
+```
+
+### Installing
+
+First, clone the repository to your local machine:
+
+```bash
+git clone <repository_url>
+```
+
+Navigate to the project directory:
+
+```bash
+cd <project_directory>
+```
+
+Install the required packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+### Running the scripts
+
+You can run the main script as follows:
+
+```bash
+python src/main.py
+```
+
+You can run the project search script as follows:
+
+```bash
+python src/project_search.py
+```
+
+Running the tests
+You can run the tests as follows:
+
+```bash
+python -m unittest tests/test_main.py
+```
+
+### License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+### Acknowledgments
+
+Hat tip to anyone whose code was used Inspiration etc.

@@ -70,8 +70,11 @@ class TestMergeFiles(unittest.TestCase):
         self.assertIn("Hello from PDF", content)
 
     def test_invalid_input_handling(self):
-        with self.assertRaises(Exception):
-            merge_files("non_existent_directory", "output.txt")
+        non_existent_directory = os.path.join(self.test_dir, "non_existent")
+        output_file = os.path.join(self.test_dir, "output.txt")
+        merge_files(non_existent_directory, output_file)
+        self.assertFalse(os.path.exists(output_file))
+
 
 if __name__ == '__main__':
     unittest.main()

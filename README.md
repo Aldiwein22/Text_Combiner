@@ -10,7 +10,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 You need Python 3.x and pip installed on your machine. You can verify your Python and pip installation by running the following commands in your terminal:
 
-```bash
+```shell
 python --version
 pip --version
 ```
